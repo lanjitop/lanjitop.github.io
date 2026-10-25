@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>网址导航 - 蓝基 LanJi.top</title>
+<meta name="description" content="技术类网址导航，硬件查询、系统工具、维修资料、技术社区常用网站汇总。">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+/*导航外层：背景全屏左右拉伸*/
+.nav {
+    width:100%;
+    background:#2C9AB7;
+}
+/*导航内层容器，内容居中，最大宽度1200px*/
+.nav-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+.nav-inner img{
+    height:80px;
+}
+.nav-inner a{
+    text-decoration: none;
+    color:#fff;
+    font-size:16px;
+	font-weight: bold;
+}
+.nav-inner a:hover{
+    text-decoration: none;
+    color:#0066cc;
+}
+
+/* ===== 横幅区域（全屏背景，文字/图片居中）===== */
+.banner{
+    width:100%;
+    background:#f0f7ff; /*横幅背景色，可以自行修改，也可以放图片*/
+    padding:60px 20px;
+}
+.banner-inner{
+    max-width:1200px;
+    margin:0 auto;
+}
+.banner h1{
+    font-size:32px;
+    color:#222;
+    margin-bottom:12px;
+}
+.banner p{
+    font-size:18px;
+    color:#444;
+}
+
+/*正文链接保留下划线：text-decoration:underline*/
+.content a{
+    color:#0066cc;
+	text-decoration:none;
+}
+.content a:visited{
+    color:#0066cc;
+	}
+.content a:hover{
+    color:#570a66;
+}
+.content{
+    max-width:1200px;
+    margin:0 auto;
+    padding:30px 20px;
+}
+.img-line-right{
+    display:block;
+    margin-left:auto;
+}
+	footer{
+    width:100%;
+	color:#fff;
+    background:#2C9AB7;
+    margin-top:40px;
+}
+.footer-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+<!--导航外层（全屏灰色背景）-->
+<div class="nav">
+    <div class="nav-inner">
+        <img src="image/logo.png" alt="logo">
+        <a href="index.html">主页</a>
+        <a href="pe.html">纯净 PE</a>
+        <a href="nas.html">NAS应用</a>
+        <a href="business.html">业务范围</a>
+        <a href="download.html">下载</a>
+        <a href="tier.html">性能天梯图</a>
+        <a href="links.html">网址导航</a>
+        <a href="about.html">关于我们</a>
+    </div>
+</div>
+
+<!--首页横幅标题-->
+<div class="banner">
+    <div class="banner-inner">
+        <h1>网址导航</h1>
+        <p>电脑硬件、系统维护、软件工具相关常用技术网站。知无止境，行则将至。</p>
+    </div>
+</div>
+<!--正文简介-->
+<div class="content">
+<p>电脑硬件、系统维护、软件工具相关常用技术网站集合。</p>
+<br>
+<p><a href="https://www.hao123.com/">百度网址导航</a></p>
+<br>
+<p><a href="https://drivers.mydrivers.com/">驱动之家：驱动、固件、工具下载</a></p>
+<br>	
+<p><a href="https://huorong.cn/">火绒安全：优秀的杀毒、软件管家</a></p>
+<br>
+<p><a href="https://appstorrent.ru/">应用种子：俄罗斯优秀软件站</a></p>
+<br>	
+<p><a href="https://bbs.pcbeta.com/">远景论坛：国内优秀的IT论坛</a></p>
+<br>
+<p>后续持续添加更多实用技术站点。</p>
+</div>
+
+<!--底部版权-->
+<footer>
+	<div class="footer-inner">
+         <p>© 蓝基 LanJi.top 保留所有权利</p>
+	</div>
+</footer>
+</body>
+</html>
