@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<!手机缩放支持>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!51统计>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({id:"3RcxqCcCu6am04eN",ck:"3RcxqCcCu6am04eN"})</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>蓝基 LanJi.top - 电脑、网络弱电、监控安防技术服务</title>
@@ -126,9 +130,77 @@ footer{
 <br>
 <p>主营：电脑组装维修、系统底层优化、纯净PE维护工具、NAS方案部署、网络布线、打印共享、全屋WiFi覆盖、监控点位规划、摄像头安装、录像机调试；同时提供各类技术资料、工具下载，硬件性能参阅解读。</p >
 <br>
-<p><img src="image/bj.png" alt="" style="display:block; margin:0 auto;"/></p >
+</div>
+	
+<!-- ========== 【最终完整版 轮播图 开始】 ========== -->
+<div style="max-width:818px; width:100%; aspect-ratio:818/399; overflow:hidden; margin:0 auto; position:relative;">
+  <div id="lunbo" style="position:relative; width:100%; height:100%;">
+    <img src="image/banner1.jpg" alt="漯河桥" style="width:100%; height:100%; position:absolute; top:0; left:0; opacity:1; transition:opacity 0.8s ease; object-fit:cover;">
+    <img src="image/banner2.jpg" alt="漯河街角" style="width:100%; height:100%; position:absolute; top:0; left:0; opacity:0; transition:opacity 0.8s ease; object-fit:cover;">
+    <img src="image/banner3.jpg" alt="铁路穿过漯河的农田" style="width:100%; height:100%; position:absolute; top:0; left:0; opacity:0; transition:opacity 0.8s ease; object-fit:cover;">
+  </div>
+  <!-- 左右切换按钮 -->
+  <button onclick="prev()" style="position:absolute;top:50%;left:10px; z-index:10; background:rgba(0,0,0,0.4); color:#fff; border:none; padding:10px 14px; border-radius:4px; cursor:pointer; font-size:18px;">◀</button>
+  <button onclick="next()" style="position:absolute;top:50%;right:10px; z-index:10; background:rgba(0,0,0,0.4); color:#fff; border:none; padding:10px 14px; border-radius:4px; cursor:pointer; font-size:18px;">▶</button>
+
+  <!-- 底部小圆点区域 -->
+  <div id="dots" style="position:absolute; bottom:18px; left:0; right:0; text-align:center; z-index:10;">
+    <span onclick="goto(0)" style="width:13px; height:13px; background:#fff; border-radius:50%; display:inline-block; margin:0 5px; cursor:pointer;"></span>
+    <span onclick="goto(1)" style="width:13px; height:13px; background:rgba(255,255,255,0.4); border-radius:50%; display:inline-block; margin:0 5px; cursor:pointer;"></span>
+    <span onclick="goto(2)" style="width:13px; height:13px; background:rgba(255,255,255,0.4); border-radius:50%; display:inline-block; margin:0 5px; cursor:pointer;"></span>
+  </div>
 </div>
 
+<script>
+let index = 0;
+const imgs = document.getElementById('lunbo').getElementsByTagName('img');
+const dots = document.getElementById('dots').getElementsByTagName('span');
+let timer;
+
+function show(){
+  for(let i=0;i<imgs.length;i++){
+    imgs[i].style.opacity = "0";
+    dots[i].style.background = "rgba(255,255,255,0.4)";
+  }
+  imgs[index].style.opacity = "1";
+  dots[index].style.background = "#fff";
+}
+
+function next(){
+  index++;
+  if(index >= imgs.length) index=0;
+  show();
+}
+function prev(){
+  index--;
+  if(index <0) index = imgs.length-1;
+  show();
+}
+function goto(num){
+  index = num;
+  show();
+}
+
+function startAutoPlay(){
+  timer = setInterval(next,4000);
+}
+function stopAutoPlay(){
+  clearInterval(timer);
+}
+
+const wrap = document.querySelector('#lunbo').parentElement;
+//电脑端鼠标事件
+wrap.addEventListener('mouseenter',stopAutoPlay);
+wrap.addEventListener('mouseleave',startAutoPlay);
+//手机触摸事件
+wrap.addEventListener('touchstart',stopAutoPlay);
+wrap.addEventListener('touchend',startAutoPlay);
+
+startAutoPlay();
+show();
+</script>
+<!-- ========== 【最终完整版 轮播图 结束】 ========== -->
+	
 <!--底部版权-->
 <footer>
 	<div class="footer-inner">
