@@ -98,6 +98,10 @@ body{
 .content a:hover{
     color:#570a66;
 }
+.content p {
+    margin: 0 0 16px 0; /* 只保留【段落底部间距】，上、右、左清零，统一16px，可改成20px自己调 */
+    line-height: 1.7;    /* ✅ 同一段文字内的行间距，统一控制，推荐1.6~1.8 */
+}
 .content{
     max-width:1200px;
     margin:0 auto;
@@ -182,26 +186,22 @@ function toggleMenu(){
 <!--正文简介-->
 <div class="content">
 <p>我们是一家专注于电脑硬件组装、系统运维、数码设备调试、网络弱电工程及监控安防服务的本地技术型商户。自成立以来，我们坚持踏实做事、专业技术、真诚服务的经营理念，不夸大宣传、不套路营销，以稳定靠谱的技术实力，服务每一位个人客户与小微企业用户。</p>
-<br>
 <p>我们深耕电脑与网络安防两大技术板块：
   在电脑技术领域：主营高性能主机DIY组装、办公电脑选配、设计及游戏设备定制、Windows系统纯净安装、底层优化、病毒清理、故障排查、软硬件兼容调试、办公软件环境部署、外设安装调试等全流程服务。熟悉家用、办公、设计、游戏各类设备需求，严格根据客户预算搭配高性价比、高稳定性硬件方案，杜绝虚假配置、捆绑软件。</p>
-<br>
 <p>在网络弱电与安防监控领域：专业承接家庭、店铺、办公室、小微企业综合弱电工程。涵盖全屋网络布线、工位网线规整、机房线路整理、网络故障排查、交换机与路由组网调试、无线WiFi覆盖优化；同时专业提供全套监控安防服务，包括监控点位规划、摄像头安装、硬盘录像机调试、画面调试、手机远程访问配置、录像存储设置、设备定期检修维护一站式服务，保障网络稳定、安防可靠。</p>
-<br>
 <p>我们长期深耕实操技术，持续跟进新版系统、新型硬件、网络组网方案和设备迭代，不断积累技术经验，拒绝落后方案与敷衍施工。所有施工交付遵循规范标准，线路规整、售后清晰，兼顾美观、实用与稳定性。</p>
-<br>
 <p>我们深知，技术服务核心是稳定、省心、靠谱。所以坚持细致装机、规范布线、纯净系统、标准施工。设备交付、工程完工前，全部完成全面测试调试，确保设备运行流畅、网络稳定、监控正常录像回放，让客户安心使用。</p>
-<br>
 <p>经营路上，我们保持踏实上进、务实求精的态度，不浮躁、不敷衍，依靠扎实技术、透明报价、靠谱售后积累口碑。未来持续精进电脑运维、网络弱电、监控安防相关技术，持续优化服务，为广大用户提供专业、安心、高性价比的一站式电脑与安防网络技术服务。</p>
-<br>
 <p>经营宗旨：技术为本，诚信经营，务实上进，长期靠谱。</p>
+<p><strong>联系方式：</strong></p>
+<p>邮箱：aaadu@163.com 微信：frontways</p>
 <br>
 <div style="display:flex; justify-content:center; gap:30px; align-items:center; flex-wrap:wrap;">
     <img src="image/lanji.jpg" alt="蓝基" style="width:100px;max-width:100%;">
     <img src="image/qianyan.jpg" alt="前沿" style="width:100px;max-width:100%;">
 </div>
 <br>
-<div> <img src="image/home.jpg" alt="蓝基 LanJi.top" width="1100" style="display:block; margin:0 auto;"></div>
+<div> <img src="image/home.jpg" alt="蓝基 LanJi.top" style="max-width:90%;height:auto;display:block;margin:0 auto;"></div>
 <br>
 <p><span style="font-weight: bold; color: #3C8DBC;">免责声明：</span>本站所有资料均来源于互联网，仅供学习和研究使用，请于测试后24小时内自行销毁，版权归原作者所有，如需长期使用，请购买正版。</p >
 </div>
@@ -209,9 +209,8 @@ function toggleMenu(){
 <!--底部版权-->
 <footer>
 	<div class="footer-inner">
-         <p>© 蓝基 LanJi.top 保留所有权利</p>
-		<br>
-       <p>irm https://get.activated.win | iex ：Open PowerShell (Not CMD). To do that, right-click on the Windows start menu and select PowerShell or Terminal.</p>
+         <p>© 前沿 | 蓝基 LanJi.top 保留所有权利</p>
+		 <p>irm https://get.activated.win | iex ：Open PowerShell (Not CMD). To do that, right-click on the Windows start menu and select PowerShell or Terminal.</p>
 	</div>
 </footer>
 </body>

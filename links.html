@@ -98,6 +98,10 @@ body{
 .content a:hover{
     color:#570a66;
 }
+.content p {
+    margin: 0 0 16px 0; /* 只保留【段落底部间距】，上、右、左清零，统一16px，可改成20px自己调 */
+    line-height: 1.7;    /* ✅ 同一段文字内的行间距，统一控制，推荐1.6~1.8 */
+}
 .content{
     max-width:1200px;
     margin:0 auto;
@@ -181,24 +185,20 @@ function toggleMenu(){
 <!--正文简介-->
 <div class="content">
 <p>电脑硬件、系统维护、软件工具相关常用技术网站集合。</p>
-<br>
 <p><a href="https://www.hao123.com/" target="_blank">百度网址导航</a></p>
-<br>
 <p><a href="https://drivers.mydrivers.com/" target="_blank">驱动之家：驱动、固件、工具下载</a></p>
-<br>	
 <p><a href="https://huorong.cn/" target="_blank">火绒安全：优秀的杀毒、软件管家</a></p>
-<br>
 <p><a href="https://appstorrent.ru/" target="_blank">应用种子：俄罗斯优秀软件站</a></p>
-<br>	
 <p><a href="https://bbs.pcbeta.com/" target="_blank">远景论坛：国内优秀的IT论坛</a></p>
-<br>
 <p>后续持续添加更多实用技术站点。</p>
+<br>
+<p><span style="font-weight: bold; color: #3C8DBC;">免责声明：</span>本站所有资料均来源于互联网，仅供学习和研究使用，请于测试后24小时内自行销毁，版权归原作者所有，如需长期使用，请购买正版。</p >
 </div>
 
 <!--底部版权-->
 <footer>
 	<div class="footer-inner">
-         <p>© 蓝基 LanJi.top 保留所有权利</p>
+         <p>© 前沿 | 蓝基 LanJi.top 保留所有权利</p>
 	</div>
 </footer>
 </body>

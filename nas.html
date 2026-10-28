@@ -98,6 +98,10 @@ body{
 .content a:hover{
     color:#570a66;
 }
+.content p {
+    margin: 0 0 16px 0; /* 只保留【段落底部间距】，上、右、左清零，统一16px，可改成20px自己调 */
+    line-height: 1.7;    /* ✅ 同一段文字内的行间距，统一控制，推荐1.6~1.8 */
+}
 .content{
     max-width:1200px;
     margin:0 auto;
@@ -189,28 +193,24 @@ function toggleMenu(){
 
 <!--正文简介-->
 <div class="content">
-<p>NAS私有网络存储，家庭与小微企业数据存储方案，打造属于自己的私有云。</p>
-<br>
-<p>功能：文件集中存储、手机照片自动备份、远程外网访问、影音媒体库、多设备文件共享、硬盘阵列保护数据。</p>
-<br>
-<p>支持DIY组装低功耗NAS主机，提供系统安装、硬盘配置、外网穿透、权限分配全套部署指导。</p>
-<br>
-<p><a href="https://5ddd.com/qianyan" target="_blank">访问我的NAS</a>【暂支持内部约定访问】。</p>
-<br>
-<p><strong>NAS截图：</strong></p>
-<br>
-<blockquote>
-   <p><img class="img-line-center" src="image/nas_0.jpg" width="900" height="527" alt="" /></p>
-</blockquote>
-<br>
-<p><span style="font-weight: bold; color: #3C8DBC;">免责声明：</span>本站所有资料均来源于互联网，仅供学习和研究使用，请于测试后24小时内自行销毁，版权归原作者所有，如需长期使用，请购买正版。</p >
-</div>
+  <p>NAS私有网络存储，家庭与小微企业数据存储方案，打造属于自己的私有云。</p>   
+  <p>功能：文件集中存储、手机照片自动备份、远程外网访问、影音媒体库、多设备文件共享、硬盘阵列保护数据。</p>	
+  <p>支持DIY组装低功耗NAS主机，提供系统安装、硬盘配置、外网穿透、权限分配全套部署指导。</p>  
+  <p><a href="https://5ddd.com/qianyan" target="_blank">访问我的NAS</a>【暂支持内部约定访问】。</p>
+  <p><strong>NAS截图：</strong></p>
+  <div>
+    <img src="image/nas_0.jpg" alt="蓝基 LanJi.top" style="max-width:100%;height:auto;display:block;">
+  </div>
+  <br>
+  <!-- 免责声明，放在content里面 -->
+  <p><span style="font-weight: bold; color: #3C8DBC;">免责声明：</span>本站所有资料均来源于互联网，仅供学习和研究使用，请于测试后24小时内自行销毁，版权归原作者所有，如需长期使用，请购买正版。</p>
+</div> <!-- ✅【这里才是content的闭合，非常关键！】 -->
 
 <!--底部版权-->
 <footer>
-	<div class="footer-inner">
-         <p>© 蓝基 LanJi.top 保留所有权利</p>
-	</div>
+  <div class="footer-inner">
+    <p>© 前沿 | 蓝基 LanJi.top 保留所有权利</p>
+  </div>
 </footer>
 </body>
 </html>
