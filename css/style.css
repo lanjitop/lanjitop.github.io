@@ -114,7 +114,7 @@ footer{
     padding:20px;
 }
 .footer-copyright::before {
-    content: "© 前沿 | 蓝基 LanJi.top 保留所有权利\A 邮箱：aaadu@163.com";
+    content: "© 前沿 | 蓝基 LanJi.top 保留所有权利";
     white-space: pre;
     display: block;
     text-align: center;
